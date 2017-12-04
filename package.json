@@ -7,6 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennyWu908/FriendFinder-Repo.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/DennyWu908/FriendFinder-Repo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  }
 }
