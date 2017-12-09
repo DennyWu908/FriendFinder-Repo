@@ -9,8 +9,39 @@
   <body>
     
     <div class="container">
+
     	<h2>Friend Finder Survey</h2>
-    	<p><h4>Answer the following questions based on how accurately each statement describes you. The Friend Finder program will match you with someone who has similar interests and opinions.</h4></p>
+    	<p><h4>First, register an account by typing in your name and the link to a photo of you. Then, answer the following questions based on how accurately each statement describes you. The Friend Finder program will match you with someone who has similar interests and opinions.</h4></p>
+
+      <hr>
+
+      <form>
+        
+        <div class="form-group">
+          <label for="registerName">Name (Required)</label>
+          <input type="text" class="form-control" id="registerName" placeholder="Type your name here">
+        </div>
+
+        <div class="form-group">
+          <label for="registerPhoto">Photo (Required)</label>
+          <input type="text" class="form-control" id="registerPhoto" placeholder="Add a link to a photo of you">
+        </div>
+        
+        <hr>
+
+        <h3>Question 1</h3>
+        <h4>I enjoy ballroom dancing.</h4>
+        <select class="custom-select" id="question1">
+          <option selected>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+      </form>
+
     </div>
 
   </body>
