@@ -1,4 +1,4 @@
-var friendsList = [
+module.exports = [
 	{
 		name: "Fred",
 		photo: ("photo link"),

@@ -11,7 +11,7 @@ $("#submitSurvey").on("click", function() {
 	};
 
 	$.post("/api/friends", survAnswers)
-	.done(
-		// callback function with one parameter ("data")
-	)
+	.done(function(data){
+		console.log(data)
+	})
 })
