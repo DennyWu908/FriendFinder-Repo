@@ -15,23 +15,3 @@ $("#submitSurvey").on("click", function() {
 		console.log(data)
 	})
 })
-
-function friendDifference (array1, array2) {
-
-	var diffArray = [];
-	var singleDiff
-	var diffTotal = 0
-	
-	for (var i = 0; i < array1.length; i++) {
-		singleDiff = array1[i] - array2[i]
-		singleDiff = Math.abs(singleDiff)
-		diffArray.push(singleDiff)
-	}
-
-	for (var j = 0; j < diffArray.length; j++) {
-		diffTotal += diffArray[j]
-	}
-
-	console.log(diffTotal)
-
-}
