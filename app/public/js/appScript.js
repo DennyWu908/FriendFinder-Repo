@@ -12,6 +12,8 @@ $("#submitSurvey").on("click", function() {
 
 	$.post("/api/friends", survAnswers)
 	.done(function(data){
+		$("#friendName").text(data.friendFound)
+		$("#friendModal").modal("toggle")
 		console.log(data)
 	})
 })
