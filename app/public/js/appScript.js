@@ -15,3 +15,10 @@ $("#submitSurvey").on("click", function() {
 		console.log(data)
 	})
 })
+
+// $.post("/api/friends", newSurvey).done(data => {
+//     const newFriend = data[pickRandomFriend(data.length - 1)];
+//     $("#matchName").text(newFriend.name);
+//     $("#matchImg").attr("src", newFriend.photo);
+//     $("#resultsModal").modal("toggle");
+//   });
