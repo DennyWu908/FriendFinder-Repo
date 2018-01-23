@@ -18,10 +18,12 @@ $("#submitSurvey").on("click", function() {
 
 		// After the data on the closest matching friend is returned, the name and photo of this person is added to the modal.
 		var surveyResult = data.friendFound
+		console.log(surveyResult)
 		$("#friendName").text(surveyResult)
 
 		// An image tag is created for the photo of the person.
 		var resultPic = data.friendPhoto
+		console.log(resultPic)
 		var resultTag = $("<img>")
 		resultTag.attr("src", resultPic)
 		resultTag.attr("alt", "Best Friend Match")

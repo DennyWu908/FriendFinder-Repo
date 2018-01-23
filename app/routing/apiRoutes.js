@@ -13,13 +13,16 @@ module.exports = function (app) {
 		compareFriends(req)
 
 		// Storing the array in a new variable, then generating an object for the friend who is the closest match.
-		var survResults = compareFriends(req)
-		closest(survResults)
+		var completeResults = compareFriends(req)
+		var completeInfo = closest(completeResults)
+
+		// Needs response. Add the closest matching friend to res.send.
 
 		// Pushing the user's name, score, and photo into the array of friends, then logging the array.
 		friends.push(req.body)
 		console.log(friends)
-		res.send("Quiz completed.")
+		res.send(completeInfo)
+		console.log(completeInfo)
 	})
 
 }
