@@ -24,10 +24,10 @@ $("#submitSurvey").on("click", function() {
 		var resultPic = data.friendPhoto
 		var resultTag = $("<img>")
 		resultTag.attr("src", resultPic)
-		resultTag.attr("alt", Best Friend Match)
+		resultTag.attr("alt", "Best Friend Match")
 		$("#friendPic").prepend(resultTag)
 
-		$("#friendModal").modal("toggle")
+		// $("#friendModal").modal("toggle")
 		console.log(data)
 	})
 })
